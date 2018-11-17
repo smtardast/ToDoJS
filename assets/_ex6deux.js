@@ -7,8 +7,9 @@ let minaTalInputL = minaTalInput.length;
 let mathematicalOperations = [];
 // let sifferVarde = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 let cmpt = 0;
+let rakna = 0;
 let total = 0;
-
+let numberOfNumbers = [];
 
 let nul = document.querySelector(".nul");
 let een = document.querySelector(".een");
@@ -32,10 +33,15 @@ let lika = document.querySelector(".lika");
 
 
 function addToArray() {
+
+    rakna++;
     console.log(inImig.value);
     minaTalInput.push(inImig.value);
     console.log(minaTalInput);
     inImig.value = null;
+    numberOfNumbers[0] = rakna;
+    console.log("number of numbers is" + numberOfNumbers);
+    console.log(numberOfNumbers);
 
 }
 
@@ -117,6 +123,26 @@ function multiplication() {
     console.log(mathematicalOperations);
 }
 
+function nollstall() {
+    for (let i = 0; i <= numberOfNumbers[0]; i++) {
+        console.log("längd är" + minaTalInput.length)
+        minaTalInput.shift();
+        mathematicalOperations.shift();
+
+
+    }
+
+    // minaTalInput.splice(0, minaTalInput.length);
+    // mathematicalOperations.splice(0, mathematicalOperations.length);
+    // mathematicalOperations[i] = null;
+    // minaTalInput[i] = [];
+    inImig.value = null;
+    result.innerText = null;
+    cmpt = 0;
+    console.log(mathematicalOperations);
+    console.log(minaTalInput);
+}
+
 function likamed() {
 
     minaTalInput.push(inImig.value);
@@ -158,6 +184,9 @@ function likamed() {
         console.log("your thang is total " + total);
         result.innerText = total;
 
+        nollstall();
+        console.log(minaTalInput);
+        console.log(mathematicalOperations);
 
 
 
@@ -165,6 +194,7 @@ function likamed() {
     }
 
 }
+
 
 
 plus.addEventListener("click", addToArray);
@@ -178,6 +208,7 @@ multi.addEventListener("click", multiplication);
 divi.addEventListener("click", division);
 
 lika.addEventListener("click", likamed);
+erase.addEventListener("click", nollstall);
 
 nul.addEventListener("click", insertBtnVal0);
 een.addEventListener("click", insertBtnVal1);
