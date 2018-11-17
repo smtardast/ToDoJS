@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="pt-5 pb-5">
+            <div class="row bg-danger  mt-5 mb-5 p-5">
+                <h1 class="text-white text-center">
+                    Javascript DOM
+                </h1>
+            </div>
+
+            <div class="row navigate">
+                <div class="klicka col-3 uno">
+                    <a href="#">
+                        Exercise 1
+                    </a>
+                </div>
+                <div class="klicka col-3 due ">
+                    <a href="#">
+                        Exercise 2
+                    </a>
+                </div>
+                <div class="klicka col-3 tre">
+                    <a href="#">
+                        Exercise 3
+                    </a>
+                </div>
+                <div class="klicka col-3 quattro">
+                    <a href="#">
+                        Exercise 4
+                    </a>
+                </div>
+            </div>
+            <div class="row navigate">
+                <div class="klicka col-3 cinque">
+                    <a href="#">
+                        Exercise 5
+                    </a>
+                </div>
+                <div class="klicka col-3 sei">
+                    <a href="#">
+                        Exercise 6
+                    </a>
+                </div>
+                <div class="col-3"></div>
+                <div class="col-3 page"></div>
+            </div>
+
+        </header>
+
+
+        <div class="alla">
+            <section class="ex1 content">
+                <div class=" p-4">
+                    <h2> Le titre modifié </h2>
+                    <p>liste de proprietés et de méthodes à retrouver dans la documentation</p>
+                    <ul>
+                        <li>innerText</li>
+                        <li>innerHTML</li>
+                        <li>querySelector()</li>
+                        <li>querySelectorAll()</li>
+                        <li>style</li>
+                        <li>classList</li>
+                    </ul>
+                    <p>
+                        Changer le contenu du h2 par "le titre modifié"
+                        <br>
+                        Changer la couleur du h2 (la couleur que vous voulez)
+                        <br>
+                        Ajouter une classe background bootstrap au h2
+                    </p>
+
+                </div>
+            </section>
+
+            <section class="ex2 p-4 content">
+                <p>Mettre un écouteur d'évenements sur les boutons et changer le panel en conséquence</p>
+            </section>
+
+
+            <section class="ex3 p-4 content">
+                <h2>Welcome <span class="nom"></span></h2>
+                <p>
+                    écrivez dans l'input ci-dessous le nom de la personne que vous voulez acceuillir
+                    <br>
+                    lorsque vous clicquez sur le bouton "go" le nom que vous avez ajouté dans l'input sera alors mis
+                    dans le h2 et l'input sera alors vidé de tout contenu. Attention de toucher l'html!
+                </p>
+                <input type="text" class="in"> <button class="butt"> Go </button>
+            </section>
+
+
+            <section class="ex4 p-4 content">
+                <h2>Déplacer les éléments</h2>
+                <div class="row p-4">
+                    <div class="col-5 bg-danger p-4">
+                        <div class="row">
+                            <div class="col-5"></div>
+                            <div class="col-2 bg-warning p-5 square1"></div>
+                            <div class="col-5"></div>
+                        </div>
+                    </div>
+                    <div class="col-2"></div>
+                    <div class="col-5 bg-danger p-4">
+                        <div class="row">
+                            <div class="col-5"></div>
+                            <div class="col-2 bg-warning p-5 square2 d-none"></div>
+                            <div class="col-5"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row "><button class="yourButton"></button></div>
+                <div class="row "><button class="yourCounter"></button></div>
+
+            </section>
+
+
+
+            <section class="ex5 p-4 content">
+
+                <h2> Générer des éléments du DOM </h2>
+                <p>Cliquer sur ce bouton pour générer des cochons prets pour la pluie</p>
+                <button class="takeMe"> Ajouter </button>
+                <div class="images">
+                    <img src="./img/piggy.png" alt="" class="pig d-none">
+                </div>
+            </section>
+
+
+
+            <section class="ex6 p-4 content">
+                <h2>Création calculatrice</h2>
+                <h3>Niveau 1</h3>
+                <div class="row">
+                    <input type="text" class="firstN">
+                    <p> + </p>
+                    <input type="text" class="secondN">
+                    <button class="equals"> = </button>
+                    <p class="answer"></p>
+
+                </div>
+
+                <h3>Niveau 2</h3>
+                <div class="col-3 bg-dark calcu">
+
+                    <div class="row pt-3 pr-3 pl-3">
+                        <p class="result text-white"> your result</p>
+
+                    </div>
+
+                    <div class="row pb-3 pr-3 pl-3 ">
+                        <input type="number" class="inImig">
+                    </div>
+
+                    <hr>
+                    <div class="row pl-2">
+                        <button type="button" class="btn btn-light m-2 een insertMe">1</button>
+                        <button type="button" class="btn btn-light m-2 twee insertMe">2</button>
+                        <button type="button" class="btn btn-light m-2 drie insertMe">3</button>
+                        <button type="button" class="btn btn-primary m-2 plus insertMe">+</button>
+                    </div>
+                    <hr>
+                    <div class="row pl-2">
+                        <button type="button" class="btn btn-light m-2 vier insertMe">4</button>
+                        <button type="button" class="btn btn-light m-2 vijf insertMe">5</button>
+                        <button type="button" class="btn btn-light m-2 zes insertMe">6</button>
+                        <button type="button" class="btn btn-primary m-2 minus insertMe">-</button>
+                    </div>
+                    <hr>
+                    <div class="row pl-2">
+                        <button type="button" class="btn btn-light m-2 zeven insertMe">7</button>
+                        <button type="button" class="btn btn-light m-2 acht insertMe">8</button>
+                        <button type="button" class="btn btn-light m-2 negen insertMe">9</button>
+                        <button type="button" class="btn btn-primary m-2 multi insertMe">*</button>
+                    </div>
+                    <hr>
+                    <div class="row pl-2">
+                        <button type="button" class="btn btn-danger m-2 erase insertMe">C</button>
+                        <button type="button" class="btn btn-light m-2 nul insertMe">0</button>
+                        <button type="button" class="btn btn-success m-2 lika insertMe">=</button>
+                        <button type="button" class="btn btn-primary m-2 divi insertMe">/</button>
+                    </div>
+
+
+
+
+                </div>
+
+
+
+            </section>
+
+        </div>
+
+    </div>
+
+
+
+    <script type="module" src="./assets/app.js"></script>
+</body>
+
+</html>

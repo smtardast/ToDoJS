@@ -1,0 +1,29 @@
+body {
+    .container {
+        header {
+            .navigate {
+                .page {
+                    a {
+                        color: red;
+                        text-decoration: none;
+                    }
+
+
+                }
+
+                .page:active {
+                    background-color: red;
+
+                }
+
+                .page:active a {
+                    color: white;
+                }
+            }
+
+
+
+        }
+    }
+
+}
