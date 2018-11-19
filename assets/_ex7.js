@@ -36,7 +36,7 @@ function addListElement() {
     let newTach = document.createElement("li");
     newTach.classList.add("list-group-item");
 
-    newTach.innerHTML = '<span>' + skrivet + '</span> <i class="float-right fas fa-pen text-info modifyIcon m-1"></i><i class="float-right fas fa-times text-danger removeIcon m-1"></i><i class="float-right fas fa-check text-success doneIcon m-1"></i>';
+    newTach.innerHTML = '<span class="hi" contenteditable="false">' + skrivet + '</span> <i class="float-right fas fa-pen text-info modifyIcon m-1" ></i><i class="float-right fas fa-times text-danger removeIcon m-1"></i><i class="float-right fas fa-check text-success doneIcon m-1"></i>';
     dasList.appendChild(newTach);
 
     favInput.value = null;
@@ -48,12 +48,24 @@ function addListElement() {
     }
 
     function crossMe() {
-        dasList.remove();
+        newTach.remove();
+    }
+
+    function editMe() {
+        if (document.querySelector(".hi").contentEditable == "false") {
+            document.querySelector(".hi").contentEditable = "true";
+
+        } else {
+            document.querySelector(".hi").contentEditable = "false";
+
+        }
     }
 
     document.querySelector(".doneIcon").addEventListener("click", tickMe);
 
     document.querySelector(".removeIcon").addEventListener("click", crossMe);
+
+    document.querySelector(".modifyIcon").addEventListener("click", editMe);
 }
 
 
