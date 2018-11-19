@@ -38,7 +38,9 @@ console.log("hej");
     for (let i = 0; i < nav.length; i++) {
         nav[i].addEventListener("click", () => {
             for (let j = 0; j < nav.length; j++) {
+                
                 nav[j].classList.remove("red");
+
                 paneler[j].classList.remove("visible");
             }
             paneler[i].classList.add("visible");

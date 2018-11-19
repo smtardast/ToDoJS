@@ -2,23 +2,23 @@ body {
     .container {
         header {
             .navigate {
-                .page {
+                .klicka {
                     a {
-                        color: red;
+                        color: #dc3545;
                         text-decoration: none;
                     }
 
 
                 }
 
-                .page:active {
-                    background-color: red;
+                // .klicka:active {
+                //     background-color: #dc3545;
 
-                }
+                // }
 
-                .page:active a {
-                    color: white;
-                }
+                // .klicka:active a {
+                //     color: white;
+                // }
             }
 
 

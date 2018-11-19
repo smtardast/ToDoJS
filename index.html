@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+
+
     <title>Document</title>
 </head>
 
@@ -13,7 +17,7 @@
     <div class="container">
         <header class="pt-5 pb-5">
             <div class="row bg-danger  mt-5 mb-5 p-5">
-                <h1 class="text-white text-center">
+                <h1 class="text-white mx-auto">
                     Javascript DOM
                 </h1>
             </div>
@@ -51,7 +55,11 @@
                         Exercise 6
                     </a>
                 </div>
-                <div class="col-3"></div>
+                <div class="col-3 klicka sette">
+                    <a href="#">
+                        Exercise 7
+                    </a>
+                </div>
                 <div class="col-3 page"></div>
             </div>
 
@@ -199,7 +207,42 @@
 
             </section>
 
+
+            <section class="ex7 p-5 content">
+
+                <h2 class="text-white text-center m-3"> To do list</h2>
+
+
+                <div class="row mx-auto">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control yourFavInput" placeholder="Add a chore">
+
+                        <div class="input-group-append ">
+                            <button type="button" class="btn btn-warning text-white addMe">Add me</button>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row p-3">
+                    <h3 class="text-white ">Tags</h3>
+                    <p class="text-white pt-1 m-1"> Sort by: </p>
+
+                    <button type="button" class="btn btn-warning text-white m-1 allBtn">All</button>
+                    <button type="button" class="btn btn-danger m-1 todoBtn">To do</button> <button type="button" class="btn btn-success m-1 doneBtn">Done</button>
+
+                </div>
+
+                <ul class="dasList">
+
+                </ul>
         </div>
+
+
+
+        </section>
+    </div>
 
     </div>
 
