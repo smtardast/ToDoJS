@@ -71,6 +71,8 @@ function addListElement() {
     for (let i = 0; i < newList.length; i++) {
 
         console.log("babe");
+
+        
         if (newList[i].classList == "done") {
             newList[i].querySelector(".doneIcon").addEventListener("click", () => {
                 newList[i].classList.remove("done", "bg-success");
